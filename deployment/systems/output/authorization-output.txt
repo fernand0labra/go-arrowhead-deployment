@@ -1,0 +1,16 @@
+MySQL Authorization in Go, © ThingWave AB 2022
+server.address: 127.0.0.1
+server.port: 8445
+core.system.name: authorization
+server.ssl.enabled: false
+Server.ssl.client.auth: need
+{"serviceDefinition":"authorization-control-intra","providerSystem":{"systemName":"authorization","address":"127.0.0.1","port":8445},"serviceUri":"/authorization/intracloud/check","endOfValidity":"2023-12-31T23:59:59","secure":"NOT_SECURE","version":1,"interfaces":["HTTP-INSECURE-JSON"]}
+response Status: 200 OK
+response Headers: map[Content-Length:[595] Content-Type:[application/json] Date:[Sun, 29 Jan 2023 14:28:04 GMT]]
+response Body: {"id":89,"serviceDefinition":{"id":6,"serviceDefinition":"authorization-control-intra","createdAt":"2023-01-25T14:29:12Z","updatedAt":"2023-01-25T14:29:12Z"},"provider":{"id":13,"systemName":"authorization","address":"127.0.0.1","port":8445,"createdAt":"2023-01-25T14:29:12Z","updatedAt":"2023-01-25T14:29:12Z"},"serviceUri":"/authorization/intracloud/check","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-01-25T10:24:55Z","updatedAt":"2023-01-29T14:28:02Z"}],"createdAt":"2023-01-25T17:12:58Z","updatedAt":"2023-01-25T17:12:58Z"}
+
+{"serviceDefinition":"auth-public-key","providerSystem":{"systemName":"authorization","address":"127.0.0.1","port":8445},"serviceUri":"/authorization/publickey","endOfValidity":"2023-12-31T23:59:59","secure":"NOT_SECURE","version":1,"interfaces":["HTTP-INSECURE-JSON"]}
+response Status: 200 OK
+response Headers: map[Content-Length:[461] Content-Type:[application/json] Date:[Sun, 29 Jan 2023 14:28:04 GMT]]
+response Body: {"id":90,"serviceDefinition":{"id":7,"serviceDefinition":"auth-public-key","createdAt":"2023-01-25T14:29:12Z","updatedAt":"2023-01-25T14:29:12Z"},"provider":{"id":13,"systemName":"authorization","address":"127.0.0.1","port":8445,"createdAt":"2023-01-25T14:29:12Z","updatedAt":"2023-01-25T14:29:12Z"},"serviceUri":"/authorization/publickey","secure":"NOT_SECURE","version":1,"interfaces":[],"createdAt":"2023-01-25T17:12:58Z","updatedAt":"2023-01-25T17:12:58Z"}
+

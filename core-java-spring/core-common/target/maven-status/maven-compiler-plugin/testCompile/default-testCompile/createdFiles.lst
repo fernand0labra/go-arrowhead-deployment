@@ -1,0 +1,12 @@
+eu/arrowhead/common/database/service/CommonDBServiceTest$1.class
+eu/arrowhead/common/UtilitiesTest.class
+eu/arrowhead/common/dto/internal/DTOUtilitiesTest.class
+eu/arrowhead/common/processor/NetworkAddressDetectorTest.class
+eu/arrowhead/common/verifier/CommonNamePartVerifierTest.class
+eu/arrowhead/common/processor/NetworkAddressPreProcessorTest.class
+eu/arrowhead/common/token/TokenUtilitiesTest$1.class
+eu/arrowhead/common/SecurityUtilitiesTest.class
+eu/arrowhead/common/verifier/NetworkAddressVerifierTest.class
+eu/arrowhead/common/CoreUtilitiesTest.class
+eu/arrowhead/common/token/TokenUtilitiesTest.class
+eu/arrowhead/common/database/service/CommonDBServiceTest.class

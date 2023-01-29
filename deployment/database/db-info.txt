@@ -1,0 +1,51 @@
+
+service_definition
+id	service_definition	created_at	updated_at
+1	service-register	2023-01-25 10:30:10	2023-01-25 10:30:10
+2	service-unregister	2023-01-25 10:30:10	2023-01-25 10:30:10
+3	register-system	2023-01-25 10:30:10	2023-01-25 10:30:10
+4	unregister-system	2023-01-25 10:30:10	2023-01-25 10:30:10
+5	pull-systems	2023-01-25 10:30:10	2023-01-25 10:30:10
+6	authorization-control-intra	2023-01-25 14:29:12	2023-01-25 14:29:12
+7	auth-public-key	2023-01-25 14:29:12	2023-01-25 14:29:12
+8	orchestration-service	2023-01-25 14:29:28	2023-01-25 14:29:28
+9	get-temperature	2023-01-25 16:38:20	2023-01-25 16:38:20
+
+service_interface
+id	interface_name	created_at	updated_at
+1	HTTP-SECURE-JSON	2023-01-25 10:24:55	2023-01-25 10:24:55
+2	HTTP-INSECURE-JSON	2023-01-25 10:24:55	2023-01-29 13:14:30
+
+system_
+id	system_name	address	address_type	port	authentication_info	metadata	created_at	updated_at
+5	serviceregistry	127.0.0.1	NULL	8443	NULL	NULL	2023-01-25 10:44:49	2023-01-29 13:14:30
+13	authorization	127.0.0.1	NULL	8445		NULL	2023-01-25 14:29:12	2023-01-25 14:29:12
+14	orchestrator	127.0.0.1	NULL	8441		NULL	2023-01-25 14:29:28	2023-01-25 14:29:28
+15	temperature-sensor-1	127.0.0.1	NULL	8888		NULL	2023-01-25 16:38:20	2023-01-25 16:38:20
+16	temperature-controller-1	127.0.0.1	NULL	8080	NULL	NULL	2023-01-25 17:00:43	2023-01-25 17:00:43
+
+service_registry
+id	service_id	system_id	service_uri	end_of_validity	secure	metadata	version	created_at	updated_at
+75	8	14	/orchestrator/orchestration	2023-12-31 23:59:59	NOT_SECURE	NULL	1	2023-01-25 14:29:28	2023-01-25 14:29:28
+76	9	15	/temperature	NULL	NOT_SECURE	NULL	0	2023-01-25 16:38:20	2023-01-25 16:38:20
+89	6	13	/authorization/intracloud/check	2023-12-31 23:59:59	NOT_SECURE	NULL	1	2023-01-25 17:12:58	2023-01-25 17:12:58
+90	7	13	/authorization/publickey	2023-12-31 23:59:59	NOT_SECURE	NULL	1	2023-01-25 17:12:58	2023-01-25 17:12:58
+115	1	5	/serviceregistry/register	NULL	NOT_SECURE	NULL	1	2023-01-29 13:14:30	2023-01-29 13:14:30
+116	1	5	/serviceregistry/unregister	NULL	NOT_SECURE	NULL	1	2023-01-29 13:14:30	2023-01-29 13:14:30
+117	2	5	/serviceregistry/unregister	NULL	NOT_SECURE	NULL	1	2023-01-29 13:14:30	2023-01-29 13:14:30
+118	3	5	/serviceregistry/register-system	NULL	NOT_SECURE	NULL	1	2023-01-29 13:14:30	2023-01-29 13:14:30
+119	4	5	/serviceregistry/unregister-system	NULL	NOT_SECURE	NULL	1	2023-01-29 13:14:30	2023-01-29 13:14:30
+120	5	5	/serviceregistry/pull-systems	NULL	NOT_SECURE	NULL	1	2023-01-29 13:14:30	2023-01-29 13:14:30
+
+service_registry_interface_connection
+id	service_registry_id	interface_id	created_at	updated_at
+75	75	2	2023-01-25 14:29:28	2023-01-25 14:29:28
+76	76	2	2023-01-25 16:38:20	2023-01-25 16:38:20
+89	89	2	2023-01-25 17:12:58	2023-01-25 17:12:58
+115	115	2	2023-01-29 13:14:30	2023-01-29 13:14:30
+
+authorization_intra_cloud
+id	created_at	updated_at	consumer_system_id	provider_system_id	service_id
+2	2023-01-29 13:12:52	2023-01-29 13:12:52	16	15	9
+
+authorization_intra_cloud_interface_connection

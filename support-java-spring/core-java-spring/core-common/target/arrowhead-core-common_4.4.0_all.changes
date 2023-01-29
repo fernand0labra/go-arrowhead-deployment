@@ -1,0 +1,20 @@
+Format: 1.8
+Date: Wed, 25 Jan 2023 16:35:43 +0000
+Source: arrowhead-core-common
+Binary: arrowhead-core-common
+Architecture: all
+Version: 4.4.0
+Distribution: development
+Urgency: low
+Maintainer: Svetlin Tanyi <szvetlin@aitia.ai>
+Changed-By: Svetlin Tanyi <szvetlin@aitia.ai>
+Description:
+ arrowhead-core-common - Arrowhead Common
+Changes:
+ arrowhead-core-common (4.4.0) development; urgency=low
+Checksums-Sha1:
+ 63493b3baa94d6fcb73062f60bdd1a4a9a807045 14604 arrowhead-core-common_4.4.0.deb
+Checksums-Sha256:
+ fc1a326de53193abf99cf7260f695283de7b0ca5fe905574c37ee9d1f5792c27 14604 arrowhead-core-common_4.4.0.deb
+Files:
+ ce7034a5632edc97ba95757d31588590 14604 contrib/java optional arrowhead-core-common_4.4.0.deb

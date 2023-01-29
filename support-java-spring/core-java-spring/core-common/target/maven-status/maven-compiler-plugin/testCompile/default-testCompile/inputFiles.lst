@@ -1,0 +1,10 @@
+/home/arrowhead/mismatch-analysis-system/core-java-spring/core-common/src/test/java/eu/arrowhead/common/database/service/CommonDBServiceTest.java
+/home/arrowhead/mismatch-analysis-system/core-java-spring/core-common/src/test/java/eu/arrowhead/common/token/TokenUtilitiesTest.java
+/home/arrowhead/mismatch-analysis-system/core-java-spring/core-common/src/test/java/eu/arrowhead/common/processor/NetworkAddressPreProcessorTest.java
+/home/arrowhead/mismatch-analysis-system/core-java-spring/core-common/src/test/java/eu/arrowhead/common/verifier/NetworkAddressVerifierTest.java
+/home/arrowhead/mismatch-analysis-system/core-java-spring/core-common/src/test/java/eu/arrowhead/common/SecurityUtilitiesTest.java
+/home/arrowhead/mismatch-analysis-system/core-java-spring/core-common/src/test/java/eu/arrowhead/common/processor/NetworkAddressDetectorTest.java
+/home/arrowhead/mismatch-analysis-system/core-java-spring/core-common/src/test/java/eu/arrowhead/common/verifier/CommonNamePartVerifierTest.java
+/home/arrowhead/mismatch-analysis-system/core-java-spring/core-common/src/test/java/eu/arrowhead/common/CoreUtilitiesTest.java
+/home/arrowhead/mismatch-analysis-system/core-java-spring/core-common/src/test/java/eu/arrowhead/common/UtilitiesTest.java
+/home/arrowhead/mismatch-analysis-system/core-java-spring/core-common/src/test/java/eu/arrowhead/common/dto/internal/DTOUtilitiesTest.java

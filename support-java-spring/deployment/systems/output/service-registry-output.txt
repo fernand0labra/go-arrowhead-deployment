@@ -1,0 +1,96 @@
+server.address: 127.0.0.1
+server.port: 8443
+core.system.name: serviceregistry
+server.ssl.enabled: false
+Server.ssl.client.auth: need
+updateProvider('serviceregistry', '127.0.0.1', 8443):
+No matching service ID found, must insert...
+getInterfacesForService(139)
+{Id:2 InterfaceName:HTTP-INSECURE-JSON CreatedAt:2023-01-25T10:24:55Z UpdatedAt:2023-01-29T14:28:00Z}
+updateProvider('serviceregistry', '127.0.0.1', 8443):
+No matching service ID found, must insert...
+getInterfacesForService(140)
+updateProvider('serviceregistry', '127.0.0.1', 8443):
+No matching service ID found, must insert...
+getInterfacesForService(141)
+updateProvider('serviceregistry', '127.0.0.1', 8443):
+No matching service ID found, must insert...
+getInterfacesForService(142)
+updateProvider('serviceregistry', '127.0.0.1', 8443):
+No matching service ID found, must insert...
+getInterfacesForService(143)
+updateProvider('serviceregistry', '127.0.0.1', 8443):
+No matching service ID found, must insert...
+getInterfacesForService(144)
+BODY: {"serviceDefinition":"orchestration-service","providerSystem":{"systemName":"orchestrator","address":"127.0.0.1","port":8441},"serviceUri":"/orchestrator/orchestration","endOfValidity":"2023-12-31T23:59:59","secure":"NOT_SECURE","version":1,"interfaces":["HTTP-INSECURE-JSON"]}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+{"serviceDefinition":"orchestration-service","providerSystem":{"systemName":"orchestrator","address":"127.0.0.1","port":8441},"serviceUri":"/orchestrator/orchestration","endOfValidity":"2023-12-31T23:59:59","secure":"NOT_SECURE","version":1,"interfaces":["HTTP-INSECURE-JSON"]}
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+###
+Registration request: {ServiceDefinition:orchestration-service ProviderSystem:{SystemName:orchestrator Address:127.0.0.1 Port:8441 AuthenticationInfo: Metadata:<nil>} ServiceUri:/orchestrator/orchestration EndOfValidity:2023-12-31T23:59:59 Secure:NOT_SECURE Metadata:<nil> Version:1 Interfaces:[HTTP-INSECURE-JSON] CreatedAt: UpdatedAt:}
+updateProvider('orchestrator', '127.0.0.1', 8441):
+No matching service ID found, must insert...
+getInterfacesForService(145)
+{Id:2 InterfaceName:HTTP-INSECURE-JSON CreatedAt:2023-01-25T10:24:55Z UpdatedAt:2023-01-29T14:28:02Z}
+{"id":145,"serviceDefinition":{"id":8,"serviceDefinition":"orchestration-service","createdAt":"2023-01-25T14:29:28Z","updatedAt":"2023-01-25T14:29:28Z"},"provider":{"id":14,"systemName":"orchestrator","address":"127.0.0.1","port":8441,"createdAt":"2023-01-25T14:29:28Z","updatedAt":"2023-01-25T14:29:28Z"},"serviceUri":"/orchestrator/orchestration","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-01-25T10:24:55Z","updatedAt":"2023-01-29T14:28:02Z"}],"createdAt":"2023-01-29T14:28:02Z","updatedAt":"2023-01-29T14:28:02Z"}
+BODY: {"serviceDefinition":"authorization-control-intra","providerSystem":{"systemName":"authorization","address":"127.0.0.1","port":8445},"serviceUri":"/authorization/intracloud/check","endOfValidity":"2023-12-31T23:59:59","secure":"NOT_SECURE","version":1,"interfaces":["HTTP-INSECURE-JSON"]}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+{"serviceDefinition":"authorization-control-intra","providerSystem":{"systemName":"authorization","address":"127.0.0.1","port":8445},"serviceUri":"/authorization/intracloud/check","endOfValidity":"2023-12-31T23:59:59","secure":"NOT_SECURE","version":1,"interfaces":["HTTP-INSECURE-JSON"]}
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+###
+Registration request: {ServiceDefinition:authorization-control-intra ProviderSystem:{SystemName:authorization Address:127.0.0.1 Port:8445 AuthenticationInfo: Metadata:<nil>} ServiceUri:/authorization/intracloud/check EndOfValidity:2023-12-31T23:59:59 Secure:NOT_SECURE Metadata:<nil> Version:1 Interfaces:[HTTP-INSECURE-JSON] CreatedAt: UpdatedAt:}
+updateProvider('authorization', '127.0.0.1', 8445):
+getInterfacesForService(89)
+{Id:2 InterfaceName:HTTP-INSECURE-JSON CreatedAt:2023-01-25T10:24:55Z UpdatedAt:2023-01-29T14:28:02Z}
+{"id":89,"serviceDefinition":{"id":6,"serviceDefinition":"authorization-control-intra","createdAt":"2023-01-25T14:29:12Z","updatedAt":"2023-01-25T14:29:12Z"},"provider":{"id":13,"systemName":"authorization","address":"127.0.0.1","port":8445,"createdAt":"2023-01-25T14:29:12Z","updatedAt":"2023-01-25T14:29:12Z"},"serviceUri":"/authorization/intracloud/check","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-01-25T10:24:55Z","updatedAt":"2023-01-29T14:28:02Z"}],"createdAt":"2023-01-25T17:12:58Z","updatedAt":"2023-01-25T17:12:58Z"}
+BODY: {"serviceDefinition":"auth-public-key","providerSystem":{"systemName":"authorization","address":"127.0.0.1","port":8445},"serviceUri":"/authorization/publickey","endOfValidity":"2023-12-31T23:59:59","secure":"NOT_SECURE","version":1,"interfaces":["HTTP-INSECURE-JSON"]}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+{"serviceDefinition":"auth-public-key","providerSystem":{"systemName":"authorization","address":"127.0.0.1","port":8445},"serviceUri":"/authorization/publickey","endOfValidity":"2023-12-31T23:59:59","secure":"NOT_SECURE","version":1,"interfaces":["HTTP-INSECURE-JSON"]}
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+###
+Registration request: {ServiceDefinition:auth-public-key ProviderSystem:{SystemName:authorization Address:127.0.0.1 Port:8445 AuthenticationInfo: Metadata:<nil>} ServiceUri:/authorization/publickey EndOfValidity:2023-12-31T23:59:59 Secure:NOT_SECURE Metadata:<nil> Version:1 Interfaces:[HTTP-INSECURE-JSON] CreatedAt: UpdatedAt:}
+updateProvider('authorization', '127.0.0.1', 8445):
+getInterfacesForService(90)
+{"id":90,"serviceDefinition":{"id":7,"serviceDefinition":"auth-public-key","createdAt":"2023-01-25T14:29:12Z","updatedAt":"2023-01-25T14:29:12Z"},"provider":{"id":13,"systemName":"authorization","address":"127.0.0.1","port":8445,"createdAt":"2023-01-25T14:29:12Z","updatedAt":"2023-01-25T14:29:12Z"},"serviceUri":"/authorization/publickey","secure":"NOT_SECURE","version":1,"interfaces":[],"createdAt":"2023-01-25T17:12:58Z","updatedAt":"2023-01-25T17:12:58Z"}
+BODY: {"serviceDefinition":"get-temperature","providerSystem":{"systemName":"temperature-sensor-1","address":"127.0.0.1","port":8888,"authenticationInfo":null,"metadata":null},"serviceUri":"/temperature","endOfValidity":null,"secure":"NOT_SECURE","metadata":{"http-method":"GET","request-param-unit":"unit"},"version":null,"interfaces":["HTTP-INSECURE-JSON"]}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+{"serviceDefinition":"get-temperature","providerSystem":{"systemName":"temperature-sensor-1","address":"127.0.0.1","port":8888,"authenticationInfo":null,"metadata":null},"serviceUri":"/temperature","endOfValidity":null,"secure":"NOT_SECURE","metadata":{"http-method":"GET","request-param-unit":"unit"},"version":null,"interfaces":["HTTP-INSECURE-JSON"]}
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+###
+Registration request: {ServiceDefinition:get-temperature ProviderSystem:{SystemName:temperature-sensor-1 Address:127.0.0.1 Port:8888 AuthenticationInfo: Metadata:<nil>} ServiceUri:/temperature EndOfValidity: Secure:NOT_SECURE Metadata:0xc0000a4510 Version:0 Interfaces:[HTTP-INSECURE-JSON] CreatedAt: UpdatedAt:}
+updateProvider('temperature-sensor-1', '127.0.0.1', 8888):
+getInterfacesForService(76)
+{Id:2 InterfaceName:HTTP-INSECURE-JSON CreatedAt:2023-01-25T10:24:55Z UpdatedAt:2023-01-29T14:28:02Z}
+{"id":76,"serviceDefinition":{"id":9,"serviceDefinition":"get-temperature","createdAt":"2023-01-25T16:38:20Z","updatedAt":"2023-01-25T16:38:20Z"},"provider":{"id":15,"systemName":"temperature-sensor-1","address":"127.0.0.1","port":8888,"createdAt":"2023-01-25T16:38:20Z","updatedAt":"2023-01-25T16:38:20Z"},"serviceUri":"/temperature","secure":"NOT_SECURE","version":0,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-01-25T10:24:55Z","updatedAt":"2023-01-29T14:28:02Z"}],"createdAt":"2023-01-25T16:38:20Z","updatedAt":"2023-01-25T16:38:20Z"}
+BODY: {"serviceDefinitionRequirement":"orchestration-service","interfaceRequirements":null,"securityRequirements":null,"metadataRequirements":null,"versionRequirement":null,"minVersionRequirement":null,"maxVersionRequirement":null,"pingProviders":false}
+################################
+Query():
+ {ServiceDefinitionRequirement:orchestration-service InterfaceRequirements:[] SecurityRequirements:[] MetadataRequirements:<nil> VersionRequirement:<nil> MaxVersionRequirement:<nil> MinVersionRequirement:<nil> PingProviders:0xc00017bb78}
+################################
+queryServicesForName('orchestration-service')
+id: 8, service_definition: 'orchestration-service', created_at: '1674656968', updated_at: '1674656968'
+serviceDef:
+{8 orchestration-service 2023-01-25T14:29:28Z 2023-01-25T14:29:28Z}
+entry:
+{Id:14 ServiceDefinition:{Id:8 ServiceDefinition:orchestration-service CreatedAt:2023-01-25T14:29:28Z UpdatedAt:2023-01-25T14:29:28Z} Provider:{Id:0 SystemName: Address: Port:0 AuthenticationInfo: Metadata:<nil> CreatedAt: UpdatedAt:} ServiceUri:/orchestrator/orchestration EndOfValidity:2023-12-31T23:59:59Z Secure:NOT_SECURE Metadata:<nil> Version:1 Interfaces:[] CreatedAt:2023-01-29T14:28:02Z UpdatedAt:2023-01-29T14:28:02Z}
+getInterfacesForService(145)
+{Id:2 InterfaceName:HTTP-INSECURE-JSON CreatedAt:2023-01-25T10:24:55Z UpdatedAt:2023-01-29T14:28:02Z}
+{"serviceQueryData":[{"id":14,"serviceDefinition":{"id":8,"serviceDefinition":"orchestration-service","createdAt":"2023-01-25T14:29:28Z","updatedAt":"2023-01-25T14:29:28Z"},"provider":{"id":14,"systemName":"orchestrator","address":"127.0.0.1","port":8441,"createdAt":"2023-01-25T14:29:28Z","updatedAt":"2023-01-25T14:29:28Z"},"serviceUri":"/orchestrator/orchestration","endOfValidity":"2023-12-31T23:59:59Z","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-01-25T10:24:55Z","updatedAt":"2023-01-29T14:28:02Z"}],"createdAt":"2023-01-29T14:28:02Z","updatedAt":"2023-01-29T14:28:02Z"}],"unfilteredHits":0}
+BODY: {"serviceDefinitionRequirement":"orchestration-service","interfaceRequirements":null,"securityRequirements":null,"metadataRequirements":null,"versionRequirement":null,"minVersionRequirement":null,"maxVersionRequirement":null,"pingProviders":false}
+################################
+Query():
+ {ServiceDefinitionRequirement:orchestration-service InterfaceRequirements:[] SecurityRequirements:[] MetadataRequirements:<nil> VersionRequirement:<nil> MaxVersionRequirement:<nil> MinVersionRequirement:<nil> PingProviders:0xc00001b658}
+################################
+queryServicesForName('orchestration-service')
+id: 8, service_definition: 'orchestration-service', created_at: '1674656968', updated_at: '1674656968'
+serviceDef:
+{8 orchestration-service 2023-01-25T14:29:28Z 2023-01-25T14:29:28Z}
+entry:
+{Id:14 ServiceDefinition:{Id:8 ServiceDefinition:orchestration-service CreatedAt:2023-01-25T14:29:28Z UpdatedAt:2023-01-25T14:29:28Z} Provider:{Id:0 SystemName: Address: Port:0 AuthenticationInfo: Metadata:<nil> CreatedAt: UpdatedAt:} ServiceUri:/orchestrator/orchestration EndOfValidity:2023-12-31T23:59:59Z Secure:NOT_SECURE Metadata:<nil> Version:1 Interfaces:[] CreatedAt:2023-01-29T14:28:02Z UpdatedAt:2023-01-29T14:28:02Z}
+getInterfacesForService(145)
+{Id:2 InterfaceName:HTTP-INSECURE-JSON CreatedAt:2023-01-25T10:24:55Z UpdatedAt:2023-01-29T14:28:02Z}
+{"serviceQueryData":[{"id":14,"serviceDefinition":{"id":8,"serviceDefinition":"orchestration-service","createdAt":"2023-01-25T14:29:28Z","updatedAt":"2023-01-25T14:29:28Z"},"provider":{"id":14,"systemName":"orchestrator","address":"127.0.0.1","port":8441,"createdAt":"2023-01-25T14:29:28Z","updatedAt":"2023-01-25T14:29:28Z"},"serviceUri":"/orchestrator/orchestration","endOfValidity":"2023-12-31T23:59:59Z","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-01-25T10:24:55Z","updatedAt":"2023-01-29T14:28:02Z"}],"createdAt":"2023-01-29T14:28:02Z","updatedAt":"2023-01-29T14:28:02Z"}],"unfilteredHits":0}

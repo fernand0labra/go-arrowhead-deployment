@@ -1,0 +1,37 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.2)
+
+2023-01-29 14:28:13.112  INFO 1182 --- [           main] a.a.t.TemperatureProviderMain            : Starting TemperatureProviderMain v1.0.0 using Java 11.0.17 on arrowhead with PID 1182 (/home/arrowhead/mismatch-analysis-system/support-java-spring/temperature-sensor/temperature-sensor-provider/target/temperature-sensor-provider-1.0.0.jar started by arrowhead in /home/arrowhead/mismatch-analysis-system/support-java-spring/temperature-sensor/temperature-sensor-provider/target)
+2023-01-29 14:28:13.130  INFO 1182 --- [           main] a.a.t.TemperatureProviderMain            : No active profile set, falling back to default profiles: default
+2023-01-29 14:28:16.355  INFO 1182 --- [           main] e.a.a.s.p.c.ContainerConfiguration       : ####################################################################################
+2023-01-29 14:28:16.355  INFO 1182 --- [           main] e.a.a.s.p.c.ContainerConfiguration       : #
+2023-01-29 14:28:16.355  INFO 1182 --- [           main] e.a.a.s.p.c.ContainerConfiguration       : # TomcatCustomizer
+2023-01-29 14:28:16.356  INFO 1182 --- [           main] e.a.a.s.p.c.ContainerConfiguration       : #
+2023-01-29 14:28:16.360  INFO 1182 --- [           main] e.a.a.s.p.c.ContainerConfiguration       : # custom maxKeepAliveRequests 1
+2023-01-29 14:28:16.360  INFO 1182 --- [           main] e.a.a.s.p.c.ContainerConfiguration       : # origin keepalive timeout: 60000 ms
+2023-01-29 14:28:16.360  INFO 1182 --- [           main] e.a.a.s.p.c.ContainerConfiguration       : # keepalive timeout: 60000 ms
+2023-01-29 14:28:16.360  INFO 1182 --- [           main] e.a.a.s.p.c.ContainerConfiguration       : # connection timeout: 60000 ms
+2023-01-29 14:28:16.360  INFO 1182 --- [           main] e.a.a.s.p.c.ContainerConfiguration       : # max connections: 8192
+2023-01-29 14:28:16.360  INFO 1182 --- [           main] e.a.a.s.p.c.ContainerConfiguration       : #
+2023-01-29 14:28:16.360  INFO 1182 --- [           main] e.a.a.s.p.c.ContainerConfiguration       : ####################################################################################
+2023-01-29 14:28:16.449  INFO 1182 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8888 (http)
+2023-01-29 14:28:16.487  INFO 1182 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-01-29 14:28:16.488  INFO 1182 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-01-29 14:28:16.673  INFO 1182 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-01-29 14:28:16.674  INFO 1182 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3406 ms
+2023-01-29 14:28:17.947  INFO 1182 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: fc79ff72-4993-40b1-8031-2a4494c8705b
+
+2023-01-29 14:28:18.149  INFO 1182 --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@329a1243, org.springframework.security.web.context.SecurityContextPersistenceFilter@344561e0, org.springframework.security.web.header.HeaderWriterFilter@29539e36, org.springframework.security.web.authentication.logout.LogoutFilter@1fc793c2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36ac8a63, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77b21474, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ecf9fb3, org.springframework.security.web.session.SessionManagementFilter@3dddbe65, org.springframework.security.web.access.ExceptionTranslationFilter@cc62a3b]
+2023-01-29 14:28:18.806  INFO 1182 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8888 (http) with context path ''
+2023-01-29 14:28:18.807  INFO 1182 --- [           main] a.a.a.a.l.c.ApplicationInitListener      : Security mode: NOT SECURED
+2023-01-29 14:28:18.927  INFO 1182 --- [           main] a.a.a.a.l.c.ApplicationInitListener      : 'SERVICEREGISTRY' core system is reachable.
+2023-01-29 14:28:18.930  INFO 1182 --- [           main] .a.a.s.p.ProviderApplicationInitListener : TokenSecurityFilter in not active
+2023-01-29 14:28:19.170  INFO 1182 --- [           main] a.a.t.TemperatureProviderMain            : Started TemperatureProviderMain in 6.694 seconds (JVM running for 8.081)

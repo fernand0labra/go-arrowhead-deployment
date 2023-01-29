@@ -1,0 +1,14 @@
+MySQL Orchestrator in Go, © ThingWave AB 2022
+server.address: 127.0.0.1
+server.port: 8441
+core.system.name: orchestrator
+server.ssl.enabled: false
+Server.ssl.client.auth: none
+{"serviceDefinition":"orchestration-service","providerSystem":{"systemName":"orchestrator","address":"127.0.0.1","port":8441},"serviceUri":"/orchestrator/orchestration","endOfValidity":"2023-12-31T23:59:59","secure":"NOT_SECURE","version":1,"interfaces":["HTTP-INSECURE-JSON"]}
+response Status: 200 OK
+response Headers: map[Content-Length:[585] Content-Type:[application/json] Date:[Sun, 29 Jan 2023 14:28:02 GMT]]
+response Body: {"id":145,"serviceDefinition":{"id":8,"serviceDefinition":"orchestration-service","createdAt":"2023-01-25T14:29:28Z","updatedAt":"2023-01-25T14:29:28Z"},"provider":{"id":14,"systemName":"orchestrator","address":"127.0.0.1","port":8441,"createdAt":"2023-01-25T14:29:28Z","updatedAt":"2023-01-25T14:29:28Z"},"serviceUri":"/orchestrator/orchestration","secure":"NOT_SECURE","version":1,"interfaces":[{"id":2,"interfaceName":"HTTP-INSECURE-JSON","createdAt":"2023-01-25T10:24:55Z","updatedAt":"2023-01-29T14:28:02Z"}],"createdAt":"2023-01-29T14:28:02Z","updatedAt":"2023-01-29T14:28:02Z"}
+
+BODY: {"requesterSystem":{"systemName":"temperature-controller-1","address":" localhost","port":8080,"authenticationInfo":null,"metadata":null},"requesterCloud":null,"requestedService":{"serviceDefinitionRequirement":"get-temperature","interfaceRequirements":["HTTP-INSECURE-JSON"],"securityRequirements":null,"metadataRequirements":null,"versionRequirement":null,"minVersionRequirement":null,"maxVersionRequirement":null,"pingProviders":false},"orchestrationFlags":{"onlyPreferred":false,"overrideStore":true,"externalServiceRequest":false,"enableInterCloud":false,"enableQoS":false,"matchmaking":false,"enableMismatchAnalysis":true,"metadataSearch":false,"triggerInterCloud":false,"pingProviders":false},"preferredProviders":[],"commands":{},"qosRequirements":{}}
+REQ: {RequesterSystem:{SystemName:temperature-controller-1 Address: localhost Port:8080 AuthenticationInfo: Metadata:<nil>} RequesterCloud:{Operator: Name: Secure:false Neighbor:false AuthenticationInfo: GatekeeperRelayIds:[] GatewayRelayIds:[]}}
+{"response":{"provider":{"id":0,"systemName":"","address":"","port":0,"createdAt":"","updatedAt":""},"serviceUri":"","secure":"","version":0,"warnings":null}}
